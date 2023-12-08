@@ -1,3 +1,10 @@
+:root{
+    --col-blk: #0a0908;
+    --col-drk: #22333b;
+    --col-crm: #eae0d5;
+    --col-bge: #c6ac8f;
+    --col-brn: #5e503f;
+}
 * {
     box-sizing: border-box;
   }
@@ -23,8 +30,8 @@
   }
 
   .header{
-    background-color: #22333b;
-    color: #eae0d5;
+    background-color: var(--col-drk);
+    color: var(--col-crm);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -61,6 +68,24 @@
 
 .hero-banner{
     background-image: url("/assets/images/02-hero-bg.jpg");
+    background-size: cover;
+    height: 200px;
+    opacity: 0.8;
+    position: relative;    
+}
+.hero-text{
+    border: 2px solid white;
+    background-color: var(--col-crm);
+    color: var(--col-drk);
+    width: 600px;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    text-align: center;
+   
+}
+.hero-text h2{
+     padding: 5px; 
 }
 
 

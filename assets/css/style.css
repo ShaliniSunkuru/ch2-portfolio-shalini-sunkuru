@@ -71,22 +71,121 @@
     background-size: cover;
     height: 200px;
     opacity: 0.8;
-    position: relative;    
+    /* position: relative;     */
 }
 .hero-text{
     border: 2px solid white;
     background-color: var(--col-crm);
     color: var(--col-drk);
-    width: 600px;
-    position: absolute;
-    top: 130px;
-    left: 50%;
-    text-align: center;
-   
+    /* width: 600px; */
+    position: relative;
+    top: 50%;
+    /* left: 50%; */
 }
 .hero-text h2{
      padding: 5px; 
+     border-radius: 5px;
+}
+.page-section{
+  padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+
+    /* align-items: center; */
+    
+    margin-bottom: 10px;
+}
+.section-left{
+    margin: 10px 0px;
+    border: 2px solid black;
+    /* width: 20%; */
+    /* text-align: center; */
+
+}
+.section-right{
+    /* justify-content: flex-end; */
+    flex-wrap: wrap;
+    /* width: 100%; */
+}
+.vl{
+    border-left: 3px solid var(--col-brn);
 }
 
+/* #first-work-img{
+  height: 25vh;
+} */
+.work-img{
+  width: 100%;
+  height: 10vh;
+}
+.work-grid{
+  flex: 1 1 100;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+   grid-template-areas: 'horiseon'
+                        'prework'
+                        'business-card '
+                        'book-count'
+                        'webpage-in-progress';
+  border: 2px solid black;
+  /* gap: 10px; */
+  
+}
+#horiseon{
+  grid-area: horiseon;
+}
+#prework{
+  grid-area: prework;
+}
+#book-count{
+  grid-area: book-count;
+}
+#business-card{
+  grid-area: business-card;
+}
+#webpage-in-progress{
+  grid-area: webpage-in-progress;
+}
 
+@media only screen and (min-width: 600px){
 
+  .work-grid{
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+
+  grid-template-areas: 'horiseon horiseon'
+                        'prework book-count'
+                        'business-card webpage-in-progress';
+  gap: 10px;
+}
+
+}
+@media only screen and (min-width: 1000px){
+
+  .page-section{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #first-work-img{
+    height: 15vh;
+  }
+
+  .section-left{
+    width: 20%;
+  }
+
+  .section-right{
+    width: 60%;
+  }
+
+  .work-grid{
+    grid-template-rows: 1.5fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
+  grid-template-areas: 'horiseon horiseon'
+                        'prework book-count'
+                        'business-card webpage-in-progress';
+  gap: 10px;
+}
+}

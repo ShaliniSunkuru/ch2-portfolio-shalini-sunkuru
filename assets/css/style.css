@@ -111,13 +111,21 @@
     border-left: 3px solid var(--col-brn);
 }
 
+.work-card{
+  position: relative;
+    border: 4px solid var(--col-drk);
+  border-radius: 8px;
+}
 .work-title{
-
   padding: 5px 20px;
   background-color: var(--col-bge);
   color: var(--col-blk);
   border-radius: 5px;
   border: 2px solid brown;
+  width: fit-content;
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }
 
 .work-title h3{
@@ -126,7 +134,7 @@
 
 .work-img{
   width: 100%;
-  height: 10vh;
+  height: 100%;
 }
 .work-grid{
 
@@ -139,25 +147,26 @@
                         'business-card '
                         'book-count'
                         'webpage-in-progress';
-  border: 2px solid black;
+  row-gap: 10px;
 
   
 }
 #horiseon{
   grid-area: horiseon;
-  border: 4px solid black;
+
 }
 #prework{
   grid-area: prework;
-  border: 4px solid black;
 }
+
 #book-count{
   grid-area: book-count;
 }
+
 #business-card{
   grid-area: business-card;
-  /* border: 4px solid black; */
 }
+
 #webpage-in-progress{
   grid-area: webpage-in-progress;
 }
@@ -165,13 +174,13 @@
 @media only screen and (min-width: 600px){
 
   .work-grid{
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
 
   grid-template-areas: 'horiseon horiseon'
                         'prework book-count'
                         'business-card webpage-in-progress';
-  column-gap: 10px;
+  gap: 10px;
 }
 
 }
@@ -180,9 +189,10 @@
   .page-section{
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   #first-work-img{
-    height: 16vh;
+    height: 100%;
   }
 
   .section-left{
@@ -196,7 +206,7 @@
 
   .work-grid{
     row-gap: 0;
-    grid-template-rows: 1.4fr 0.8fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
 
   grid-template-areas: 'horiseon horiseon'

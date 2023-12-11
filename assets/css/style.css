@@ -197,7 +197,17 @@
   justify-content: space-around;
 }
 
+/* Hover Styles */
 
+.work-card:hover{
+  opacity: 0.8;
+  border: 5px solid var(--col-bge);
+
+}
+
+.nav-bar ul li:hover{
+    background-color: var(--col-brn);
+}
 
 /* Media queries for larger screens - large phones and tabs */
 

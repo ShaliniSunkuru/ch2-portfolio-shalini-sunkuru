@@ -201,7 +201,7 @@
 
 
 
-/* Media queries for larger screens */
+/* Media queries for larger screens - large phones and tabs */
 
 @media only screen and (min-width: 600px){
 
@@ -227,6 +227,8 @@
 }
 
 }
+
+/* Media queries for laptops and larger screens */
 
 @media only screen and (min-width: 992px){
 

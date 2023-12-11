@@ -14,7 +14,7 @@
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
-    min-width: 300px;
+    /* min-width: 300px; */
   }
   
   h1,
@@ -41,51 +41,84 @@
   }
 
   .header h1{
-    border: 2px solid white;
+    margin-left: 10px;
+    justify-content: flex-start;
   }
+
+  .header .nav-bar{
+    margin-right: 10px;  
+  }
+
 
   .header .nav-bar ul{
     border: 2px solid white;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-
+    padding-left: 0;
   }
 
   .header .nav-bar ul li{
     list-style: none;
     font-size: 20px;
-    padding: 5px 20px;
-    
+    padding: 0px 15px;   
   }
 
   .header .nav-bar ul li a{
     color: inherit;
     text-decoration: none;
   }
+ 
 
-  
-
-.hero-banner{
+/* .hero-img{
     background-image: url("/assets/images/02-hero-bg.jpg");
     background-size: cover;
     height: 200px;
     opacity: 0.8;
+    
+} */
+.hero-banner{
+  background-image: url("/assets/images/hero-background.jpg");
+  background-size: cover;
+  /* height: 200px; */
+}
+.profile{
+  margin: 10px 0 10px 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  
 }
 
-.hero-text{
-    border: 2px solid white;
+/* .hero-text{
+  border: 2px solid black;
+  position: absolute;
+  top:0px;
+} */
+
+/* .hero-text h2{ 
+    border: 2px solid black;
     background-color: var(--col-crm);
     color: var(--col-drk);
     position: relative;
-    top: 50%;
+    top: 140px;
+    left: 50%;
+} */
+#profile-img{
+  height: 200px;
+  width: 200px;
+  border: 4px solid var(--col-drk);
+  border-radius: 95px;
 }
 
-.hero-text h2{
-     padding: 5px; 
-     border-radius: 5px;
+#profile-txt{
+  background-color: var(--col-crm);
+  margin: 0 0 20px 10px;
+  flex-grow: 1;
 }
+
+
+
 
 .page-section{
   padding: 5px 10px;
@@ -191,7 +224,7 @@
 }
 
 }
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 992px){
 
   .page-section{
     flex-direction: row;

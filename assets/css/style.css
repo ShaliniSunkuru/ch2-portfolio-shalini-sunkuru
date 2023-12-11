@@ -121,10 +121,6 @@
   
 }
 
-.vl{
-    border-left: 3px solid var(--col-brn);
-}
-
 /* work grid */
 
 .work-grid{
@@ -195,8 +191,10 @@
 
 /* Contact section styles */
 
-#contact-links a{
-  padding-right: 30px;
+#contact-links{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 
@@ -219,6 +217,8 @@
   gap: 10px;
 }
 
+
+
 .work-title h3{
   font-size: 20px;
 }
@@ -235,8 +235,12 @@
   .page-section{
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     flex-wrap: wrap;
+  }
+
+  .vl{
+    border-left: 4px solid var(--col-brn);
   }
 
   #profile-txt{
@@ -269,6 +273,8 @@
                         'business-card webpage-in-progress';
   gap: 10px;
 }
+
+
 
 .work-title h3{
   font-size: 25px;

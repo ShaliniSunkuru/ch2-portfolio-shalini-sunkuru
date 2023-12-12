@@ -78,7 +78,7 @@
 /* Profile styles */
 
 .hero-banner{
-  background-image: url("/assets/images/hero-background.jpg");
+  background-image: url("../images/hero-background.jpg");
   background-size: cover;
 }
 

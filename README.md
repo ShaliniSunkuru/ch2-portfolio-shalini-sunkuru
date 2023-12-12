@@ -28,19 +28,19 @@ SO THAT potential employers will find it easy to know more about my candidature
 
 ## Acceptance Criteria
 
-GIVEN a url for basic portfolio website
-WHEN I click to open the url
-The loaded page has my profile picture, name, links to sections about me, my work, and my contact
-WHEN the links in the navigation are clicked,
-The corresponding section is scrolled to
-WHEN I view the portfolio projects
-The section has titles images of my work,
-WHEN I view the portfolio projects
-The first application is larger than the others
-WHEN the projects are clicked
-The deployed application opens,
-WHEN the page is resized or viewd on different screens
-The layout is responsive and adapts to my viewport,
+GIVEN a url for basic portfolio website\
+WHEN I click to open the url\
+The loaded page has my profile picture, name, links to sections about me, my work, and my contact\
+WHEN the links in the navigation are clicked,\
+The corresponding section is scrolled to\
+WHEN I view the portfolio projects\
+The section has titles images of my work,\
+WHEN I view the portfolio projects\
+The first application is larger than the others\
+WHEN the projects are clicked\
+The deployed application opens,\
+WHEN the page is resized or viewd on different screens\
+The layout is responsive and adapts to my viewport,\
 
 ## Screenshot
 
@@ -74,7 +74,7 @@ I appreciate the guidance of the instrutor and TAs of edX Bootcamp. W3Schools, f
 
 ## License
 
-MIT 
+Please refer to the MIT License in the repository.
 
 
 
